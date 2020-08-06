@@ -56,54 +56,29 @@
             </header>
             
             <main>
-                
-                <article class="teacher-item">
-                    <header>
-                        <img 
-                            src="https://avatars1.githubusercontent.com/u/62778691?s=460&u=a8c535cfa9213502698b84d45a8424312fa51a3f&v=4" 
-                            alt="Lucas William">
-                        <div>
-                            <strong>Lucas William</strong>
-                            <span>Matemática</span>
-                        </div>
-                    </header>
+                {%for proffy in proffys %}
+                    <article class="teacher-item">
+                        <header>
+                            <img 
+                                src="{{proffy.avatar}}" 
+                                alt="{{proffy.name}}">
+                            <div>
+                                <strong>{{proffy.name}}</strong>
+                                <span>{{proffy.subject}}</span>
+                            </div>
+                        </header>
 
-                    <p>Jesus está no Monte das Oliveiras ensinando, quando de repente se levanta e diz: <br>
-                        y = 3x² + 2x - 3. <br>
-                        Espantado, um de seus discípulos pergunta <br>
-                        "O que é isso, Mestre?" <br>
-                        Ao que Jesus responde: "Calma, é apenas mais uma parábola...".</p>
+                        <p>{{proffy.bio}}</p>
 
-                    <footer>
-                        <p>Preço/hora<strong>R$ 20,00</strong>
-                        </p>
-                        <button type="button">
-                            <img src="images/icons/instagram-logo.svg" alt="Whatsapp">Entrar em contato
-                        </button>
-                    </footer>
-                </article>
-
-                <article class="teacher-item">
-                    <header>
-                        <img 
-                            src="https://scontent.fthe8-1.fna.fbcdn.net/v/t1.0-9/95013607_2368686556763351_6136717429360820224_o.jpg?_nc_cat=102&_nc_sid=09cbfe&_nc_ohc=X-OGT5S5o24AX_LZUYf&_nc_ht=scontent.fthe8-1.fna&oh=506a2b63f96b3b6672c0c12c184827ec&oe=5F4FB527" 
-                            alt="Paulo Ricardo">
-                        <div>
-                            <strong>Paulo Ricardo</strong>
-                            <span>Química</span>
-                        </div>
-                    </header>
-
-                    <p>Entusiasta das melhores tecnologias de química avançada.<br><br>Apaixonado por explodir coisas em laboratório e por mudar a vida das pessoas através de experiências. Mais de 200.000 pessoas já passaram por uma das minhas explosões.</p>
-
-                    <footer>
-                        <p>Preço/hora<strong>R$ 20,00</strong>
-                        </p>
-                        <button type="button">
-                            <img src="images/icons/instagram-logo.svg" alt="Whatsapp">Entrar em contato
-                        </button>
-                    </footer>
-                </article>
+                        <footer>
+                            <p>Preço/hora<strong>R$ {{proffy.cost}}</strong>
+                            </p>
+                            <a href="https://www.instagram.com/{{proffy.instagram}}" class="button" target="_blank">
+                                <img src="images/icons/instagram-logo.svg" alt="instagram">Entrar em contato
+                            </a>
+                        </footer>
+                    </article>
+                {%endfor%}
 
 
             </main>
