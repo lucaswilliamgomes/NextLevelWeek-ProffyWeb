@@ -31,6 +31,10 @@ const server = express()
 
 
 
+function give_matter (subjectNumber) {
+    return subjects[subjectNumber - 1]
+}
+    
 
 const pageLanding = function (req, res) {
     return res.render("index.html")
@@ -47,7 +51,10 @@ const pageGiveClasses = function (req, res) {
     const isNotEmpty = Object.keys(data).length > 0
 
     if (isNotEmpty) {
+
+        data.subject = give_matter(data.subject)
         proffys.push(data)
+    
         return res.redirect("/study")
     }   
 
