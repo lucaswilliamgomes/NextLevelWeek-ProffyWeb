@@ -136,6 +136,12 @@
     width: 2rem;
 }
 
+#page-study main .no-results {
+    max-width: 30remx;
+    margin: 12rem auto;
+    text-align: center;
+}
+
 @media (min-width: 700px) {
     #page-study #container {
         max-width: 100%;
