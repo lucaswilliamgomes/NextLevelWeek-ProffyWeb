@@ -9,22 +9,52 @@ function pageLanding (req, res) {
 
 async function pageStudy (req, res){
     let filter = req.query
+ 
+    if (Object.values(filter).length == 0) {
 
-    const query = `
-    SELECT classes.*, proffys.* 
-    FROM proffys
-    JOIN classes on (classes.proffy_id = proffys.id)
-    WHERE classes.subject = '${filter.subject}';
-    `
-    try {
-        const db = await Database
-        const proffys = await db.all(query)
+        const query = `
+        SELECT classes.*, proffys.* 
+        FROM proffys
+        JOIN classes on (classes.proffy_id = proffys.id)
+        `
 
-        return res.render("study.html", {proffys, filter, subjects})
+        try {
+            const db = await Database
+            const proffys = await db.all(query)
 
-    } catch (error) {
-        console.log(error)
-    }  
+            proffys.map(proffy => {
+                proffy.subject = give_matter (proffy.subject)
+            })
+
+
+            return res.render("study.html", {proffys, filter, subjects})
+
+        } catch (error) {
+            console.log(error)
+        }  
+
+    } else {
+
+        const query = `
+        SELECT classes.*, proffys.* 
+        FROM proffys
+        JOIN classes on (classes.proffy_id = proffys.id)
+        WHERE classes.subject = '${filter.subject}';
+        `
+        try {
+            const db = await Database
+            const proffys = await db.all(query)
+
+            proffys.map(proffy => {
+                proffy.subject = give_matter (proffy.subject)
+            })
+
+            return res.render("study.html", {proffys, filter, subjects})
+
+        } catch (error) {
+            console.log(error)
+        }  
+    }   
 }
 
 function pageGiveClasses (req, res) {

@@ -33,7 +33,6 @@ db.then(async db => {
     SELECT classes.*,proffys.* 
     FROM proffys
     JOIN classes on (classes.proffy_id = proffys.id)
-    WHERE classes.proffy_id = 1;
     `)
 
     console.log(selectedClassesAndProffys)
