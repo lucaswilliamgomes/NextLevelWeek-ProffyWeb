@@ -3,19 +3,22 @@
 
 ## Tecnologias usadas 
 
-<img src="./public/images/readme/js.png" width="50px"/>
-<img src="./public/images/readme/css.webp" width="50px"/>
-<img src="./public/images/readme/html.png" width="45px"/>
-<img src="./public/images/readme/sql.png" width="50px"/>
+<img src="./public/images/readme/js.png" width="50px"/> &nbsp;&nbsp;JavaScript com NodeJs no backend
+
+<img src="./public/images/readme/css.webp" width="50px"/> &nbsp;&nbsp;Css
+
+<img src="./public/images/readme/html.png" width="45px"/> &nbsp;&nbsp;HTML
+
+<img src="./public/images/readme/sql.png" width="70px"/> &nbsp; Sql lite como banco de dados
 
 
-###                   Lading page
+#                  Lading page
 <img src="./public/images/readme/landing-page.png" width="700"/>
 
-###                   Study page                            
+#                 Study page                            
 <img src="./public/images/readme/study.png" width="700"/>
 
-###                   Give classes page
+#                  Give classes page
 <img src="./public/images/readme/give-classes.png" width="700"/>
 
 
