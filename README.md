@@ -1,12 +1,12 @@
 ## Proffy 
-### Projeto realizado na semana NLW#2 promovida pela Rocketseat   <img src="./public/images/readme/rocketseat.png" width="25" heigth="20"/> 
+### Projeto realizado na NLW#2 promovida pela Rocketseat &nbsp;  <img src="./public/images/readme/rocketseat.png" width="20"/> 
 
 ## Tecnologias usadas 
 
-<img src="./public/images/readme/js.png" width="80"/>
-<img src="./public/images/readme/css.webp" width="85"/>
-<img src="./public/images/readme/html.png" width="75"/>
-<img src="./public/images/readme/sql.png" width="80"/>
+<img src="./public/images/readme/js.png" width="50px"/>
+<img src="./public/images/readme/css.webp" width="50px"/>
+<img src="./public/images/readme/html.png" width="45px"/>
+<img src="./public/images/readme/sql.png" width="50px"/>
 
 
 ###                   Lading page
