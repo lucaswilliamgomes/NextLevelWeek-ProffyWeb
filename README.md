@@ -9,7 +9,7 @@
 
 <img src="./public/images/readme/html.png" width="45px"/> &nbsp;&nbsp;HTML
 
-<img src="./public/images/readme/sql.png" width="70px"/> &nbsp; Sql lite como banco de dados
+<img src="./public/images/readme/sql.png" width="70px"/> &nbsp; SqLite como banco de dados
 
 
 #                  Lading page
