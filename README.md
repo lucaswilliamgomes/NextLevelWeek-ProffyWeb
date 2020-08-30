@@ -1,5 +1,5 @@
 ## Proffy 
-### Projeto realizado na NLW#2 promovida pela Rocketseat &nbsp;  <img src="./public/images/readme/rocketseat.png" width="20"/> 
+Projeto realizado na NLW#2 promovida pela Rocketseat &nbsp;  <img src="./public/images/readme/rocketseat.png" width="20"/> 
 
 ## Tecnologias usadas 
 
